@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .menu-item {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            border-right: 1px solid #ccc;
+            transition: color 0.3s ease;
+        }
+
+        .menu-item:hover {
+            color: #007bff; /* Cor do efeito hover */
+        }
+
+        /* Remove a linha direita no último item */
+        .menu-item:last-child {
+            border-right: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <a href="link-da-pagina-projetos" class="menu-item">Projetos</a>
+        <a href="link-da-pagina-sprints" class="menu-item">Sprints</a>
+        <a href="link-da-pagina-educacao" class="menu-item">Educação</a>
+        <a href="link-da-pagina-forum" class="menu-item">Fórum</a>
+    </div>
+
+</body>
+</html>
