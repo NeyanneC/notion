@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title>Menu com Ícones</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,6 +22,8 @@
             margin: 0 10px;
             font-size: 16px;
             border-right: 1px solid #ccc;
+            display: flex;
+            align-items: center;
             transition: color 0.3s ease;
         }
 
@@ -29,20 +31,36 @@
             color: #007bff; /* Cor do efeito hover */
         }
 
-        /* Remove a linha direita no último item */
         .menu-item:last-child {
-            border-right: none;
+            border-right: none; /* Remove linha no último item */
+        }
+
+        /* Estilo dos ícones */
+        .menu-item i {
+            margin-right: 8px;
+            font-size: 18px;
         }
     </style>
+    <!-- Adicionando link do Font Awesome para usar ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
     <div class="menu">
-        <a href="link-da-pagina-projetos" class="menu-item">Projetos</a>
-        <a href="link-da-pagina-sprints" class="menu-item">Sprints</a>
-        <a href="link-da-pagina-educacao" class="menu-item">Educação</a>
-        <a href="link-da-pagina-forum" class="menu-item">Fórum</a>
+        <a href="link-da-pagina-projetos" class="menu-item">
+            <i class="fas fa-folder"></i> Projetos
+        </a>
+        <a href="link-da-pagina-sprints" class="menu-item">
+            <i class="fas fa-tasks"></i> Sprints
+        </a>
+        <a href="link-da-pagina-educacao" class="menu-item">
+            <i class="fas fa-graduation-cap"></i> Educação
+        </a>
+        <a href="link-da-pagina-forum" class="menu-item">
+            <i class="fas fa-comments"></i> Fórum
+        </a>
     </div>
 
 </body>
 </html>
+
